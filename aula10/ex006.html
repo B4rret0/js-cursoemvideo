@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRODUZINDO DOM</title>
+    <style>
+        div#tomale {
+            background-color: gray;
+            width: 300px;
+            height: 100px;
+            font: normal 18pt Arial;
+            text-align:center;
+            line-height: 50px;
+            margin: 40px;
+            margin-inline: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="tomale" onclick="clique()" onmouseenter="entrou()" onmouseout="saiu()">Clique para saber por que não existe flor preta.</div>
+    <script>
+        var a = document.getElementById('tomale')
+        a.addEventListener('click', clique)
+        a.addEventListener('mouseenter', entrou)
+        a.addEventListener('mouseout', saiu)
+
+        function clique() {
+            a.innerHTML = 'Porque preto não é flor que se cheire'
+        }
+        function entrou() {
+            a.style.color = 'white'
+            a.style.backgroundColor = 'black'
+        }
+        function saiu() {
+            a.style.backgroundColor = 'gray'   
+            a.style.color = 'black'
+        }
+    </script>
+</body>
+</html>

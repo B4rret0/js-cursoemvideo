@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header>
+    <h1> Jogo de Adivinhação.</h1>
+ </header>
+    
+ <section>
+    <div>
+        <p>Insira a baixo um número de 0 a 100. Será exibido se o valor estiver a baixo ou acima do número inserido.</p>
+    </div>
+    <div>
+        <input type="number" name="entrada" id="num">
+        <input type="button" value="Chutar" onclick="play()"> 
+        <img src="159657.png" width="18px" height="18px" alt="Resetar" onclick="refresh()">
+        <p id="feed"> Você está inserindo um número: </p>
+    </div>
+ </section>
+
+ <footer>
+    &copy; Barreto.
+ </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    background-color: hsl(240, 100%, 100%);
+    color: #142d4c;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    background-color: #9fd3c7;
+    color: #142d4c;
+    border-radius: 20px;
+    box-shadow: 1px 2px 4px #385170;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.botao{
+    background-color: #142d4c;
+    
+}
+
+footer {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}

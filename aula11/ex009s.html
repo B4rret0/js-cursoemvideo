@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIDADANIA</title>
+</head>
+<body>
+    <h1>CONFERIR CIDADANIA BRASILEIRA</h1>
+    <p>Digite a baixo o país na qual você nasceu: </p>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="clique()">
+    <div id="res">▶ Você...</div>
+<script>
+    function clique() {
+        var pas = document.getElementById('pais')
+        var res = document.getElementById('res')
+        if (pas == 'Brasil') {
+            res.innerText = '▶ Você é Brasileiro!'
+        } else {
+            res.innerText = '▶ Sinto muito, é uma pena você não ser brasileiro'
+        }
+  
+    }
+</script>  
+</body>
+</html>

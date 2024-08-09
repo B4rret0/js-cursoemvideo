@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>CONSULTA DE MULTAS</h1>
+    <input type="number" name="velocidade" id="vel"> KM/h
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div id="resultado">▶ Resultado do teste ◀</div>
+<script>
+    function clicar() {
+        var numero = document.getElementById('vel')
+        var result = document.getElementById('resultado')
+        var motora = Number(numero.value)
+        if (motora <= 60) {
+            result.innerText = '▶ Nenhuma multa registrada. ◀'
+        } else {
+            result.innerText = '▶ Você foi flagrado acima da velocidade permitida. Será notificado! ◀'
+        }
+    }
+</script>
+</body>
+</html>

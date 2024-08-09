@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PornHub</title>
+    <style>
+        body {
+            background-color: gray;
+            color: whitesmoke;
+            font: italic 24pt Arial;
+        }
+        h1 {
+            color:black /*COMENTÁRIO EM CSS*/
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p> Sou fechado com Jesus Cristo</p> <!-- COMENTÁRIO EM HTML -->
+    <script>
+            //Number.parseInt (PARA FORÇAR O NÚMERO ENTREGUE SER INTEIRO).
+            //Number.parseFloat (PARA FORÇAR O NÚMERO ENTREGUE SER QUEBRADO).
+    var n1 = Number(window.prompt('Digite um número:'))
+    var n2 = Number(window.prompt('Digite outro número:'))
+    var result = n1 + n2
+    
+    window.alert('A soma de '+n1+' e '+n2+' é igual a: '+result+'.')
+    //window.alert('A soma de '+ String(n1) +' e '+ String(n2)+ ' é igual a: '+result+'.').
+        /* O código não vai funcionar por questão de hierarquia, mas 
+        é assim que se converteria os NUMEROS para STRINGS. */
+    
+        window.alert(`Os números exibidos na tela foram resultado da soma entre ${n1} e ${n2} que resultou em ${result}.`)
+    // Outro modelo de formatação de STRING, maneira mais limpa.
+    </script>
+</body>
+</html> 

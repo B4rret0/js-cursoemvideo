@@ -1,0 +1,37 @@
+ <!-- USANDO OS APPS LIVE SERVER E NODE.JS EXEC -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: gray;
+            color: black;
+            font: normal 22pt Arial;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>START EM DOM</h1>
+    <p>Iniciando DOM em <strong>.JS</strong></p>
+    <p>Testando os comandos</p>
+    <div name="msg">Clique aqui fuboca</div> <!-- Poderia usar id, name, class. Conforme minha necessidade e preferência -->
+    <script>
+        //Selecionando por MARCA (TagName)
+        let p1 = window.document.getElementsByTagName('p')[0] // O 0 chama o primeiro paragrafo que aparecer
+        let nome = window.document.getElementsByName('msg')[0]
+        window.document.write(`Está escrito: ${p1.innerText}`)
+        p1.style.color = 'white'
+        nome.style.color = 'blue' // Outra maneira de mudar o CSS
+        nome.innerText = 'Troquei a palavra' // Outra maneira de mudar o HTML
+        nome.style.background = 'white' // Outra maneira de mudar o CSS
+        /* let nome = window.document.querySelector(div.msg) - OU "#" NO LUGAR DO "."
+           nome.style.color = 'blue'
+           */ // MUDANDO CSS AO INVES DE HTML
+    </script>
+</body>
+</html>
